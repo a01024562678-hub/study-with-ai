@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="웹 개발 학습자의 웹페이지 작업 모음" />
+    <title>웹 개발 학습자 | 작업 모음</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">MY WEB PROJECTS</p>
+        <h1 id="page-title">배우며 만든<br />작은 웹 프로젝트</h1>
+        <p class="hero-copy">하나씩 직접 만들며 웹 개발의 기초를 익히고 있습니다.</p>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">PROJECT LIST</p>
+          <h2 id="projects-title">3개의 페이지</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card profile-card">
+            <div class="page-preview profile-preview" aria-hidden="true">
+              <span class="preview-avatar"></span><span class="preview-line"></span><span class="preview-button"></span>
+            </div>
+            <p class="project-number">01</p>
+            <p class="project-type">INTRODUCTION</p>
+            <div class="card-title"><h3>나를 소개하는 첫 페이지</h3><span class="status updating">업데이트 중</span></div>
+            <p>관심사와 연락처, 그리고 명함 페이지로 연결되는 버튼이 있는 첫 개인 페이지입니다.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span></div>
+            <a href="../profile-page/index.html">페이지 보기 <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="project-card portfolio-card">
+            <div class="page-preview portfolio-preview" aria-hidden="true">
+              <span class="preview-logo">●</span><span class="preview-line"></span><span class="preview-card"></span>
+            </div>
+            <p class="project-number">02</p>
+            <p class="project-type">PORTFOLIO</p>
+            <div class="card-title"><h3>작업을 모아 보는 포트폴리오</h3><span class="status updating">업데이트 중</span></div>
+            <p>다크모드, 프로젝트 필터, 모바일 메뉴, 연락처 폼을 넣은 작업 소개 페이지입니다.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="../portfolio-page/index.html">페이지 보기 <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="project-card business-card">
+            <div class="page-preview business-preview" aria-hidden="true">
+              <span class="preview-initials">✦</span><span class="preview-line"></span><span class="preview-contact"></span>
+            </div>
+            <p class="project-number">03</p>
+            <p class="project-type">DIGITAL CARD</p>
+            <div class="card-title"><h3>한눈에 보는 디지털 명함</h3><span class="status preparing">다음 기능 준비 중</span></div>
+            <p>이름과 소개, 이메일을 담은 온라인 명함입니다. 이메일 주소를 복사할 수 있습니다.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="../business-card/index.html">페이지 보기 <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>다음 프로젝트도 직접 만들어 보겠습니다.</p>
+        <p>코드는 GitHub에서 관리합니다.</p>
+      </footer>
+    </main>
+  </body>
+</html>

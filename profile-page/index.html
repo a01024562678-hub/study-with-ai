@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="웹 개발 학습자의 간단한 자기소개 페이지" />
+    <title>웹 개발 학습자의 자기소개</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="첫 화면으로 이동">MY PAGE</a>
+      <nav aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#interests">관심사</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="avatar" aria-hidden="true">✦</div>
+        <p class="eyebrow">HELLO, I AM</p>
+        <!-- 이름을 본인의 이름으로 바꿔 보세요. -->
+        <h1 id="hero-title">웹 개발 학습자</h1>
+        <!-- 한 줄 소개를 본인의 목표나 성격에 맞게 바꿔 보세요. -->
+        <p class="hero-copy">웹을 공부하고 있습니다.</p>
+        <div class="hero-buttons">
+          <a class="button" href="#contact">연락하기 <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="../business-card/index.html">명함 보기 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <p class="section-label">ABOUT ME</p>
+        <h2 id="about-title">안녕하세요.</h2>
+        <p>멈추지 않고 배우며, 생각을 결과로 만드는 사람입니다.</p>
+      </section>
+
+      <section class="content-section" id="interests" aria-labelledby="interests-title">
+        <p class="section-label">INTERESTS</p>
+        <h2 id="interests-title">관심 분야</h2>
+        <p class="interests-copy">좋아하는 것들로 나를 소개합니다.</p>
+        <!-- 관심 있는 기술이나 키워드로 태그를 바꿔 보세요. -->
+        <div class="tag-list" role="list" aria-label="관심 기술 목록">
+          <span role="listitem">게임</span>
+          <span role="listitem">영화</span>
+          <span role="listitem">공연</span>
+          <span role="listitem">자기개발</span>
+        </div>
+      </section>
+
+      <section class="contact-card" id="contact" aria-labelledby="contact-title">
+        <p class="section-label">CONTACT</p>
+        <h2 id="contact-title">연락하기</h2>
+        <p>아래 이메일로 연락해 주세요.</p>
+        <a class="email-link" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="current-year"></span> Web Learner. Made with HTML &amp; CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

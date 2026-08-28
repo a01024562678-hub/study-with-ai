@@ -1,0 +1,183 @@
+:root {
+  --background: #f3f0fa;
+  --card: #ffffff;
+  --text: #292533;
+  --muted: #716b7e;
+  --accent: #6f50b5;
+  --accent-dark: #50338e;
+  --line: #e3ddef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  place-items: center;
+  background:
+    radial-gradient(circle at 15% 15%, rgb(155 125 220 / 24%), transparent 25rem),
+    var(--background);
+  color: var(--text);
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+.card {
+  width: min(100%, 680px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: 0 20px 50px rgb(57 37 95 / 16%);
+}
+
+.card-top {
+  min-height: 280px;
+  padding: 28px 34px;
+  background:
+    linear-gradient(90deg, rgb(15 10 29 / 30%), transparent 58%),
+    url("growth-staircase-background.png") center bottom / cover no-repeat;
+  color: #ffffff;
+}
+
+.card-label {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.card-content {
+  padding: 42px 34px 34px;
+}
+
+.greeting,
+.contact-label {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Gaegu", "Malgun Gothic", sans-serif;
+  font-size: clamp(3.4rem, 11vw, 5.5rem);
+  line-height: 1;
+}
+
+.role {
+  margin: 12px 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.introduction {
+  max-width: 480px;
+  margin: 20px 0 30px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-box {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #faf9fd;
+}
+
+#email-link {
+  display: block;
+  width: fit-content;
+  color: var(--text);
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+#copy-email {
+  margin-top: 14px;
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#copy-email:hover,
+#copy-email:focus-visible {
+  background: var(--accent-dark);
+}
+
+.copy-message {
+  min-height: 1.6em;
+  margin: 8px 0 0;
+  color: var(--accent-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.phone-contact {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.phone-link {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.phone-link span {
+  margin-right: 4px;
+  color: var(--accent);
+}
+
+.phone-link:hover,
+.phone-link:focus-visible {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+footer {
+  padding: 18px 34px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  .card-top,
+  .card-content {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .card-top {
+    min-height: 220px;
+    padding-top: 24px;
+  }
+
+  .card-content {
+    padding-top: 32px;
+  }
+
+  footer {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}

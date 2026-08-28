@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="웹 개발 학습자의 웹 포트폴리오" />
+    <title>웹 개발 학습자 | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top">WEB.</a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="site-navigation" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#skills">기술</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="다크 모드로 전환" aria-pressed="false">
+        <span aria-hidden="true">☾</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">WEB PORTFOLIO</p>
+        <!-- 이름과 한 줄 소개를 본인에게 맞게 바꿔 보세요. -->
+        <h1 id="hero-title">웹 개발을 배우고 있습니다.</h1>
+        <p class="hero-copy">배우고, 만들고, 더 나은 결과를 고민합니다.</p>
+        <a class="primary-button" href="#projects">프로젝트 보기 <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">ABOUT</p>
+        <h2 id="about-title">작은 시도를 계속합니다.</h2>
+        <p>
+          웹의 기본부터 하나씩 익히며, 생각한 것을 화면으로 만드는 연습을 하고 있습니다.
+          완성하는 경험을 쌓는 것을 가장 중요하게 생각합니다.
+        </p>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <p class="eyebrow">SKILLS</p>
+        <h2 id="skills-title">배우고 있는 기술</h2>
+        <div class="skill-list" role="list" aria-label="기술 목록">
+          <span role="listitem">HTML</span>
+          <span role="listitem">CSS</span>
+          <span role="listitem">JavaScript</span>
+          <span role="listitem">Git</span>
+        </div>
+        <p class="learning-now">현재 배우는 중: <strong>JavaScript로 페이지에 동작 넣기</strong></p>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <p class="eyebrow">PROJECTS</p>
+        <h2 id="projects-title">만든 페이지</h2>
+        <div class="project-filter" role="group" aria-label="프로젝트 종류 선택">
+          <button class="filter-button is-active" type="button" data-filter="all">전체</button>
+          <button class="filter-button" type="button" data-filter="html-css">HTML · CSS</button>
+          <button class="filter-button" type="button" data-filter="javascript">JavaScript</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="html-css">
+            <div class="project-thumbnail project-thumbnail-profile" aria-hidden="true">WEB</div>
+            <p class="project-number">01</p>
+            <h3>자기소개 페이지</h3>
+            <p>관심 분야와 연락처를 담은 첫 번째 개인 웹페이지입니다.</p>
+            <div class="project-tags" aria-label="사용 기술"><span>HTML</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="../profile-page/index.html">페이지 보기 <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub 보기 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-card-muted" data-category="javascript">
+            <div class="project-thumbnail project-thumbnail-next" aria-hidden="true">JS</div>
+            <p class="project-number">02</p>
+            <h3>다음 프로젝트</h3>
+            <p>JavaScript를 사용한 새로운 아이디어를 기록할 예정입니다.</p>
+            <div class="project-tags" aria-label="사용 기술"><span>JavaScript</span></div>
+          </article>
+        </div>
+        <p class="empty-message" hidden>선택한 종류의 프로젝트를 준비 중입니다.</p>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">CONTACT</p>
+        <h2 id="contact-title">함께 이야기해요.</h2>
+        <p class="contact-copy">궁금한 점이 있다면 메시지를 남겨 주세요.</p>
+        <form class="contact-form" novalidate>
+          <label>이름 <input type="text" name="name" autocomplete="name" required /></label>
+          <label>이메일 <input type="email" name="email" autocomplete="email" required /></label>
+          <label>메시지 <textarea name="message" rows="4" required></textarea></label>
+          <button class="form-submit" type="submit">메시지 보내기</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+        <a class="email-link" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="current-year"></span> WEB LEARNER</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
